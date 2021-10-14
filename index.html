@@ -9,9 +9,24 @@
     <script defer src="./index.js"></script>
   </head>
   <body>
-    <main>
+    <header>
       <h1>Ghibli Review App</h1>
-      <img src="images/ghibli-logo.png" width="75%" />
-    </main>
+      <img src="./images/ghibli-logo.png" width="75%" />
+    </header>
+    <article>
+      <select id="move-names">
+        <option value="default">Pick a move</option>
+      </select>
+    </article>
+    <article id="review">
+      <form>
+        <label for="search-text">Your Review</label>
+        <input type="text" id=review-text" name="review" />
+        <input type="submit" value="Submit Review" />
+      </form>
+    </article>
+    <article id="display-info">
+      <ul></ul>
+    </article>
   </body>
 </html>
