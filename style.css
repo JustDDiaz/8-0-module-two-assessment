@@ -1,13 +1,31 @@
 body {
   background-color: lavender;
+  display: grid;
+  grid-template-columns: repeat(10, 10%);
 }
 
 header {
   background-color: skyblue;
+  grid-column: 2/10;
 }
 
 h1 {
   padding-right: 70px;
   text-align: right;
   font-family: monospace;
+}
+
+#review {
+  text-align: center;
+  grid-column: 2/10;
+  font-family: monospace;
+}
+
+#drop-down {
+  font-family: monospace;
+  grid-column: 2/10;
+  padding-left: 100px;
+}
+#dispaly-info {
+  grid-column: 2/10;
 }
