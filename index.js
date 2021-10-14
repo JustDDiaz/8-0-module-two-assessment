@@ -38,6 +38,11 @@ document.querySelector("#drop-down").addEventListener("change", (event) => {
 document.querySelector("#review form").addEventListener("submit", (event) => {
   event.preventDefault();
   const review = document.querySelector("#review");
-  const text = document.querySelector("#review-text");
+  const text = document.querySelector("#review-text").value;
+  const li = document.createElement("li");
+  li.textContent = text;
+  const ul = document.querySelector("ul");
+  ul.append(li);
   console.log(text);
+  event.preventDefault();
 });
